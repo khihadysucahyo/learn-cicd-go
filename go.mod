@@ -1,0 +1,1 @@
+module github.com/khihadysucahyo/learn-cicd-go
