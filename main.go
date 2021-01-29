@@ -25,8 +25,9 @@ func HealthCheckHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	godotenv.Load()
 	http.HandleFunc("/health", HealthCheckHandler)
-	fmt.Println("server running in port 2021")
+	fmt.Printf("%s server running in port 2021", os.Getenv("APP_NAME"))
 	if err := http.ListenAndServe(":2021", nil); err != nil {
 		log.Fatal(err)
 	}
