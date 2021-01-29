@@ -13,7 +13,7 @@ import (
 func HealthCheckHandler(w http.ResponseWriter, r *http.Request) {
 	godotenv.Load()
 	res, err := json.Marshal(map[string]interface{}{
-		"message": "service unavailable",
+		"message": "service available",
 	})
 	fmt.Println(res)
 	if err != nil {
