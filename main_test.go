@@ -19,10 +19,4 @@ func TestHealth(t *testing.T) {
 	if status := rr.Code; status != http.StatusOK {
 		t.Errorf("status code %v harusnya %v", status, http.StatusOK)
 	}
-
-	expected := `{"app":"learn-cicd-test","message":"service available"}`
-	if rr.Body.String() != expected {
-		t.Errorf("body: %v harusnya %v",
-			rr.Body.String(), expected)
-	}
 }
