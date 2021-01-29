@@ -16,7 +16,7 @@ func HealthCheckHandler(w http.ResponseWriter, r *http.Request) {
 		"app": os.Getenv("APP_NAME"),
 		"message": "service available",
 	})
-	fmt.Println(res)
+
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
