@@ -6,15 +6,15 @@ import (
 	"log"
 	"net/http"
 	"os"
+
 	"github.com/joho/godotenv"
 )
 
-// HealthCheckHandler
+// HealthCheckHandler func
 func HealthCheckHandler(w http.ResponseWriter, r *http.Request) {
 	godotenv.Load()
 	res, err := json.Marshal(map[string]interface{}{
-		"app": os.Getenv("APP_NAME"),
-		"message": "service available",
+		"message": "service available!",
 	})
 	fmt.Println(res)
 	if err != nil {
