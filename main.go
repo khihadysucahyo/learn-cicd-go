@@ -3,17 +3,18 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/joho/godotenv"
 	"log"
 	"net/http"
 	"os"
+
+	"github.com/joho/godotenv"
 )
 
-// HealthCheckHandler
+// HealthCheckHandler func
 func HealthCheckHandler(w http.ResponseWriter, r *http.Request) {
 	godotenv.Load()
 	res, err := json.Marshal(map[string]interface{}{
-		"message": "service available",
+		"message": "service available!",
 	})
 	fmt.Println(res)
 	if err != nil {
