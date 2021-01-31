@@ -31,7 +31,7 @@ WORKDIR /dist
 RUN cp /build/main .
 
 ## Copy env from build to dist folder
-RUN cp /build/.env .
+# RUN cp /build/.env .
 
 # STAGE 2
 # generate clean, final image for end users
