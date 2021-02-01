@@ -9,7 +9,7 @@
       "entryPoint": null,
       "portMappings": [
         {
-          "hostPort": 8888,
+          "hostPort": 0,
           "protocol": "tcp",
           "containerPort": 2021
         }
@@ -17,16 +17,7 @@
       "command": null,
       "linuxParameters": null,
       "cpu": 0,
-      "environment": [
-        {
-          "name": "APP_NAME",
-          "value": "learn-cicd-go"
-        },
-        {
-          "name": "APP_PORT",
-          "value": "2021"
-        }
-      ],
+      "environment": [],
       "resourceRequirements": null,
       "ulimits": null,
       "dnsServers": null,
@@ -35,7 +26,7 @@
       "secrets": null,
       "dockerSecurityOptions": null,
       "memory": null,
-      "memoryReservation": null,
+      "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
       "image": "713199376158.dkr.ecr.us-east-2.amazonaws.com/learn-cicd-go",
@@ -59,19 +50,25 @@
     }
   ],
   "placementConstraints": [],
-  "memory": "128",
+  "memory": null,
   "taskRoleArn": null,
   "compatibilities": [
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:713199376158:task-definition/learn-cicd-go-task-v2:4",
-  "family": "learn-cicd-go-task-v2",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:713199376158:task-definition/learn-cicd-go-task-v3:1",
+  "family": "learn-cicd-go-task-v3",
   "requiresAttributes": [
     {
       "targetId": null,
       "targetType": null,
       "value": null,
       "name": "com.amazonaws.ecs.capability.ecr-auth"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
     }
   ],
   "pidMode": null,
@@ -79,8 +76,8 @@
     "EC2"
   ],
   "networkMode": null,
-  "cpu": "128",
-  "revision": 4,
+  "cpu": null,
+  "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
