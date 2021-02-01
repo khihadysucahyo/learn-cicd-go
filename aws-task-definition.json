@@ -46,7 +46,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "713199376158.dkr.ecr.us-east-2.amazonaws.com/learn-cicd-go:latest",
+      "image": "713199376158.dkr.ecr.us-east-2.amazonaws.com/learn-cicd-go:3d3c18a0bdbaaea954635d21d7e2f6d4d311f3a6",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -67,12 +67,12 @@
     }
   ],
   "placementConstraints": [],
-  "memory": "512",
+  "memory": "128",
   "taskRoleArn": null,
   "compatibilities": [
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:713199376158:task-definition/learn-cicd-go-task:7",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:713199376158:task-definition/learn-cicd-go-task:12",
   "family": "learn-cicd-go-task",
   "requiresAttributes": [
     {
@@ -99,8 +99,8 @@
     "EC2"
   ],
   "networkMode": null,
-  "cpu": "512",
-  "revision": 7,
+  "cpu": "128",
+  "revision": 12,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
