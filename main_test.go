@@ -7,7 +7,7 @@ import (
 )
 
 func TestHealth(t *testing.T) {
-	req, err := http.NewRequest("GET", "/healths", nil)
+	req, err := http.NewRequest("GET", "/health", nil)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -20,7 +20,7 @@ func TestHealth(t *testing.T) {
 		t.Errorf("status code %v harusnya %v", status, http.StatusOK)
 	}
 
-	expected := `{"message":"service available"}`
+	expected := `{"message":"service available!"}`
 	if rr.Body.String() != expected {
 		t.Errorf("body: %v harusnya %v",
 			rr.Body.String(), expected)
