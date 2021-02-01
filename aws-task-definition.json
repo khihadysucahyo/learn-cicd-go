@@ -55,7 +55,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "learn-cicd-container"
+      "name": "learn-cicd-go"
     }
   ],
   "placementConstraints": [],
@@ -64,7 +64,7 @@
   "compatibilities": [
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:713199376158:task-definition/learn-cicd-go-task-v2:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:713199376158:task-definition/learn-cicd-go-task-v2:4",
   "family": "learn-cicd-go-task-v2",
   "requiresAttributes": [
     {
@@ -80,7 +80,7 @@
   ],
   "networkMode": null,
   "cpu": "128",
-  "revision": 1,
+  "revision": 4,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
