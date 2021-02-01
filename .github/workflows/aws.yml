@@ -68,7 +68,7 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: aws-task-definition.json
-        container-name: learn-cicd-go-container
+        container-name: learn-cicd-go
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Deploy Amazon ECS task definition
