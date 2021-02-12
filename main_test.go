@@ -6,6 +6,7 @@ import (
 	"testing"
 )
 
+// TestHealth (this comment to trigger the pipeline)
 func TestHealth(t *testing.T) {
 	req, err := http.NewRequest("GET", "/health", nil)
 	if err != nil {
