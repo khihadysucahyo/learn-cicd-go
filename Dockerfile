@@ -1,7 +1,7 @@
 FROM golang:1.13-alpine3.11 as builder
 
 LABEL Maintainer="Khi Hady Sucahyo <khihady.ks@gmail.com>" \
-      Description="Learn CI/CD GO."
+      Description="Learn CI/CD GO with AWS ECS."
 
 RUN apk --no-cache add gcc g++ make ca-certificates git
 # Set necessary environmet variables needed for our image
